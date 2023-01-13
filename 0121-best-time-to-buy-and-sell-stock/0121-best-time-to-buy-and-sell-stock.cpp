@@ -6,13 +6,11 @@ public:
         int pist = 0;
         
         for(int i = 0; i < prices.size(); i++){
-            if(prices[i] < lsf){
+            if(prices[i] < lsf)
                 lsf = prices[i];
-            }
             pist = prices[i] - lsf;
-            if(op < pist){
+            if(op < pist)
                 op = pist;
-            }
         }
         return op;
     }
