@@ -10,6 +10,8 @@ public:
                 if(l && r){
                     flowerbed[i] = 1;
                     cnt++;
+                    if(cnt >=n)
+                        return true;
                 }
             }
         }
